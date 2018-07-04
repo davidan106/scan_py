@@ -34,7 +34,7 @@ for i in range(1,30000):
 t1 = datetime.now()
  
  
-pool = ThreadPool(processes = 1024)
+pool = ThreadPool(processes = 512)
 results = pool.map(scan_port,ports)
 pool.close()
 pool.join()
